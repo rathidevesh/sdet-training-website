@@ -1,0 +1,381 @@
+.course-details {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #8b5cf6 100%);
+    padding: 80px 20px;
+    min-height: 100vh;
+    color: white;
+  }
+  
+  .course-details-container {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  
+  .course-details-header {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  
+  .course-details-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  .course-details-subtitle {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.9);
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+  
+  .course-details-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+  }
+  
+  /* Main Info Section */
+  .main-info-section {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .info-card {
+    background: rgba(15, 23, 42, 0.8);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(148, 163, 184, 0.3);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  }
+  
+  .info-card.duration-card {
+    border-left: 4px solid #3b82f6;
+    background: rgba(15, 23, 42, 0.9);
+  }
+  
+  .info-card.entry-level-card {
+    border-left: 4px solid #10b981;
+    background: rgba(15, 23, 42, 0.9);
+  }
+  
+  .card-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 25px;
+  }
+  
+  .icon-wrapper {
+    width: 50px;
+    height: 50px;
+    background: rgba(59, 130, 246, 0.2);
+    border: 1px solid rgba(59, 130, 246, 0.3);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  
+  .clock-icon {
+    width: 24px;
+    height: 24px;
+    color: #60a5fa;
+  }
+  
+  .target-icon {
+    width: 24px;
+    height: 24px;
+    color: #10b981;
+  }
+  
+  .card-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+  
+  .duration-text {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #60a5fa;
+    margin: 0;
+    text-shadow: 0 0 10px rgba(96, 165, 250, 0.3);
+  }
+  
+  .entry-level-text {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #10b981;
+    margin: 0;
+    text-shadow: 0 0 10px rgba(16, 185, 129, 0.3);
+  }
+  
+  .entry-level-description {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.6;
+    margin: 0;
+  }
+  
+  .schedule-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .schedule-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  
+  .schedule-indicator {
+    width: 4px;
+    height: 60px;
+    border-radius: 2px;
+    flex-shrink: 0;
+    margin-top: 5px;
+  }
+  
+  .weekdays-indicator {
+    background: linear-gradient(135deg, #3b82f6, #60a5fa);
+    box-shadow: 0 0 10px rgba(59, 130, 246, 0.4);
+  }
+  
+  .weekend-indicator {
+    background: linear-gradient(135deg, #a855f7, #c084fc);
+    box-shadow: 0 0 10px rgba(168, 85, 247, 0.4);
+  }
+  
+  .schedule-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: white;
+  }
+  
+  .schedule-days {
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 4px;
+  }
+  
+  .schedule-time {
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0;
+  }
+  
+  /* Features Grid */
+  .features-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  
+  .feature-card {
+    background: rgba(15, 23, 42, 0.7);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(148, 163, 184, 0.2);
+    border-radius: 16px;
+    padding: 25px;
+    text-align: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .feature-card.online-classes {
+    border-left: 4px solid #3b82f6;
+    background: rgba(59, 130, 246, 0.1);
+  }
+  
+  .feature-card.class-recordings {
+    border-left: 4px solid #a855f7;
+    background: rgba(168, 85, 247, 0.1);
+  }
+  
+  .feature-card.homework {
+    border-left: 4px solid #10b981;
+    background: rgba(16, 185, 129, 0.1);
+  }
+  
+  .feature-card.assessments {
+    border-left: 4px solid #f59e0b;
+    background: rgba(245, 158, 11, 0.1);
+  }
+  
+  .feature-card.mentorship {
+    border-left: 4px solid #ef4444;
+    background: rgba(239, 68, 68, 0.1);
+  }
+  
+  .feature-card.real-projects {
+    border-left: 4px solid #06b6d4;
+    background: rgba(6, 182, 212, 0.1);
+  }
+  
+  .feature-card.rewards {
+    border-left: 4px solid #14b8a6;
+    background: rgba(20, 184, 166, 0.1);
+  }
+  
+  .feature-card.interview-prep {
+    border-left: 4px solid #f97316;
+    background: rgba(249, 115, 22, 0.1);
+  }
+  
+  .feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+    background: rgba(255, 255, 255, 0.1);
+  }
+  
+  .feature-card.online-classes:hover {
+    box-shadow: 0 12px 40px rgba(59, 130, 246, 0.3);
+  }
+  
+  .feature-card.class-recordings:hover {
+    box-shadow: 0 12px 40px rgba(168, 85, 247, 0.3);
+  }
+  
+  .feature-card.homework:hover {
+    box-shadow: 0 12px 40px rgba(16, 185, 129, 0.3);
+  }
+  
+  .feature-card.assessments:hover {
+    box-shadow: 0 12px 40px rgba(245, 158, 11, 0.3);
+  }
+  
+  .feature-card.mentorship:hover {
+    box-shadow: 0 12px 40px rgba(239, 68, 68, 0.3);
+  }
+  
+  .feature-card.real-projects:hover {
+    box-shadow: 0 12px 40px rgba(6, 182, 212, 0.3);
+  }
+  
+  .feature-card.rewards:hover {
+    box-shadow: 0 12px 40px rgba(20, 184, 166, 0.3);
+  }
+  
+  .feature-card.interview-prep:hover {
+    box-shadow: 0 12px 40px rgba(249, 115, 22, 0.3);
+  }
+  
+  .feature-icon {
+    width: 40px;
+    height: 40px;
+    margin: 0 auto 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+  }
+  
+  .online-classes .feature-icon svg {
+    color: #60a5fa;
+  }
+  .class-recordings .feature-icon svg {
+    color: #c084fc;
+  }
+  .homework .feature-icon svg {
+    color: #34d399;
+  }
+  .assessments .feature-icon svg {
+    color: #fbbf24;
+  }
+  .mentorship .feature-icon svg {
+    color: #f87171;
+  }
+  .real-projects .feature-icon svg {
+    color: #22d3ee;
+  }
+  .rewards .feature-icon svg {
+    color: #2dd4bf;
+  }
+  .interview-prep .feature-icon svg {
+    color: #fb923c;
+  }
+  
+  .feature-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: white;
+  }
+  
+  .feature-description {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.4;
+    margin: 0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .course-details-content {
+      grid-template-columns: 1fr;
+      gap: 50px;
+    }
+  
+    .features-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .course-details {
+      padding: 60px 15px;
+    }
+  
+    .course-details-title {
+      font-size: 2.5rem;
+    }
+  
+    .course-details-subtitle {
+      font-size: 1.1rem;
+    }
+  
+    .info-card {
+      padding: 25px;
+    }
+  
+    .card-header {
+      flex-direction: column;
+      text-align: center;
+      gap: 15px;
+    }
+  
+    .features-grid {
+      grid-template-columns: 1fr;
+      gap: 15px;
+    }
+  
+    .feature-card {
+      padding: 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .course-details-title {
+      font-size: 2rem;
+    }
+  
+    .schedule-item {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .schedule-indicator {
+      width: 100%;
+      height: 3px;
+    }
+  }
+  
