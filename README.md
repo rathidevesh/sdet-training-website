@@ -28,8 +28,3 @@ npm start
 
 This will start the app in development mode.
 Open http://localhost:3000 in your browser.
-
-
-npm run eject → Exposes config files (not reversible)
-
-🌐 Deploy
